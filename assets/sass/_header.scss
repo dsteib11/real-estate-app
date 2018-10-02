@@ -1,0 +1,43 @@
+header {
+  background: #000;
+  .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 15px;
+    .logo{
+      color: #fff;
+      font-size: 1.5rem;
+      align-self: center;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        color: $puce;
+      }
+    }
+    nav {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      align-self: flex-end;
+      a {
+       align-self: center;
+       text-transform: capitalize;
+       font-weight: 400;
+       text-decoration: none;
+       color: #fff;
+       font-size: 1.2rem;
+       letter-spacing: 1px;
+       transition: all .3s ease-in-out;
+       cursor: pointer;
+       &:hover {
+         color: $puce;
+       }
+       &.register-btn {
+         background: $btnBlue;
+         padding: 10px 20px;
+         border-radius: 5px;
+       }
+     }
+    }
+  }
+}
